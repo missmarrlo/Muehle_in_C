@@ -12,14 +12,14 @@ Dieses Programm ermöglicht es, das Brettspiel Mühle auf der Kommandozeile zu s
 
 Die folgenden Dateien sind enthalten:
 
-* checkmuehle.c
-* checkmuehle.h
-* main.c
-* muehleio.c
-* muehleio.h
-* muehleio_win.c
-* muehleio_win.h
-* diese readme-Datei
+- checkmuehle.c
+- checkmuehle.h
+- main.c
+- muehleio.c
+- muehleio.h
+- muehleio_win.c
+- muehleio_win.h
+- diese readme-Datei
 
 Um zu spielen, werden zunächst die einzelnen Programmteile kompiliert und dann das gesamte Programm. Hierbei ist zu beachten, dass die Programmteile muehleio_win.c und muehleio_win.h für die Ausführung unter Windows vorgesehen sind, während die ansonsten gleichnamigen Programmteile muehleio.c und muehleio.h für die Ausführung unter Linux sowie macOS vorgesehen sind. Der einzige Unterschied zwischen den Dateien ist die farbige Ausgabe für den Benutzer, die unter Windows nicht funktioniert. Sollten bei Ihnen ebenfalls Probleme bei der farbigen Ausgabe auftreten, können Sie aber natürlich auch mit anderen Betriebssystemen als Windows die farblosen _win-Dateien nutzen. Beim Kompilieren sollten folgende Befehle benutzt werden (mit gcc):
 
@@ -37,9 +37,9 @@ Die anschließende Ausführung des Programms ist abhängig vom Betriebssystem.
 
 Das Programm leitet den bzw. die Spieler vollständig durch den Spielablauf und gibt hierbei Rückmeldung über falsche Eingaben und Regelbrüche. Es berücksichtigt hierbei sämtliche offizielle Spielregeln, wie beispielsweise:
 
-* Kann ein Spieler keinen Zug mehr machen, weil er von den Steinen des Gegners eingesperrt ist, hat er verloren.
-* In der Ziehphase darf man sich immer nur ein Feld weiter bewegen, und dieses Feld muss leer sein.
-* Bei einer gebildeten Mühle darf man einen Stein des Gegners entfernen, wenn mindestens ein Stein von ihm nicht in einer Mühle ist.
+- Kann ein Spieler keinen Zug mehr machen, weil er von den Steinen des Gegners eingesperrt ist, hat er verloren.
+- In der Ziehphase darf man sich immer nur ein Feld weiter bewegen, und dieses Feld muss leer sein.
+- Bei einer gebildeten Mühle darf man einen Stein des Gegners entfernen, wenn mindestens ein Stein von ihm nicht in einer Mühle ist.
 
 Das Mühlebrett wird hierbei als zweidimensionales Koordinatensystem dargestellt:
 
